@@ -6,17 +6,17 @@
     <meta name="description" content="Download GATE Metallurgy previous year papers free. Candidates are provided here all the past years question paper of GATE MT exam for all the subjects.">
     <meta name="author" content="Siddharth Tank">
     <meta name="keywords" content="GATE, Metallurgy, gate_metallurgy, MT, GATE MT, GATE Metallurgy">
-    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/icons/favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="gate.css">
+    <link rel="stylesheet" href="/gate.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<style>
+<!-- <style>
     .dropdown-content {
       display: none;
       position: absolute;
@@ -50,7 +50,6 @@
             font-size: 16px;
             line-height: 25px;
             padding: 10px 40px;
-            /* text-transform: uppercase; */
             cursor: pointer;
             text-align: left;
             margin: 0 auto;
@@ -59,7 +58,7 @@
         }
     }
     
-</style>
+</style> -->
 
 <!-- ------------------------------- Header -------------------------------- -->
 <header>
@@ -102,17 +101,25 @@
               <div id="sidebarMenu">
                 <ul class="sidebarMenuInner">
                     <a href="https://gatemetallurgy.tk"><li>Home</li></a>
-                    <button>
-                        <a><li>GATE Info</li></a>
-                        <div class="dropdown-content">
-                            <a href="#">Information</a>
-                            <a href="#">Syllabus</a>
-                            <a href="previous-papers.html">Previous Year papers</a>
-                            <a href="#">Referene Books</a>
-                            <a href="#">Important Dates</a>
-                        </div>
-                    </button>
-                    <a href="#"><li>Video Course</li></a>
+                    
+                    <button class="collapsible"><a><li>GATE MT</li></a></button>
+                    <div class="content">
+                        <p><a href="#">Information</a></p>
+                        <p><a href="#">GATE Syllabus</a></p>
+                        <p><a href="previous-papers.html">Previous Year Papers</a></p>
+                        <p><a href="#">Reference Books</a></p>
+                        <p><a href="#">Important Dates</a></p>
+                    </div>
+
+                    <button class="collapsible"><a><li>Video Courses</li></a></button>
+                    <div class="content">
+                        <p><a href="#">Physical Metallurgy</a></p>
+                        <p><a href="#">Mechanical Metallurgy</a></p>
+                        <p><a href="#">Thermodynamics</a></p>
+                        <p><a href="#">Manufacturing Processes</a></p>
+                        <p><a href="#">Extractive Metallurgy</a></p>
+                    </div>
+
                     <a href="#"><li>Contact Us</li></a>
                 </ul>
               </div>
@@ -120,6 +127,47 @@
         </div>
     </div>
 </header>
+
+<style>
+    
+    .content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #f1f1f1;
+    }
+
+    .content p{
+        color: var(--black);
+        font-size: 16px;
+        line-height: 25px;
+        padding: 10px 40px;
+        cursor: pointer;
+        text-align: left;
+        margin: 0 auto;
+        border-bottom: 2px solid var(--light-grey);
+        background: var(--light-grey);
+    }
+</style>
+
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+  </script>
 <!-- ------------------------------- Header -------------------------------- -->
 
 <!-- ---------------------------- Main Content ----------------------------- -->
