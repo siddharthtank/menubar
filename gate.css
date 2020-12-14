@@ -852,6 +852,10 @@ footer .container img {
     background: var(--white);
     border: none;
   }
+  header .container .navbar .nav #sidebarMenu .sidebarMenuInner button a li::after {
+    content: "+";
+    float: right;
+  }
   header .container .navbar .nav #sidebarMenu .sidebarMenuInner a li {
     list-style: none;
     color: var(--blue);
@@ -861,13 +865,9 @@ footer .container img {
     padding: 10px 30px;
     text-transform: uppercase;
     cursor: pointer;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     border-bottom: 2px solid var(--light-grey);
-  }
-  header .container .navbar .nav #sidebarMenu .sidebarMenuInner a li:hover {
-    background-color: var(--light-grey);
-    color: var(--orange);
   }
   header .container .navbar .nav input[type="checkbox"]:checked ~ #sidebarMenu {
     -webkit-transform: translateX(0);

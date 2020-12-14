@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="/icons/favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="gate.css">
+    <link rel="stylesheet" href="/gate.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,7 +46,16 @@
         }
 
         .dropdown-content a{
-            text-align: center;
+            color: var(--black);
+            font-size: 16px;
+            line-height: 25px;
+            padding: 10px 40px;
+            /* text-transform: uppercase; */
+            cursor: pointer;
+            text-align: left;
+            margin: 0 auto;
+            border-bottom: 2px solid var(--light-grey);
+            background: var(--light-grey);
         }
     }
     
@@ -61,12 +70,14 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><button>
-                        <a>GATE MT</a>
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                          </div>
+                        <a>GATE MT <i class="fa fa-caret-down"></i></a>
+                        <!-- <div class="dropdown-content">
+                            <a href="#">Information</a>
+                            <a href="#">Syllabus</a>
+                            <a href="#">Previous Year papers</a>
+                            <a href="#">Referene Books</a>
+                            <a href="#">Important Dates</a>
+                          </div> -->
                         </button>
                     </li>
                     <li><a href="#">Video Courses</a></li>
@@ -92,11 +103,13 @@
                 <ul class="sidebarMenuInner">
                     <a href="https://gatemetallurgy.tk"><li>Home</li></a>
                     <button>
-                        <a><li>GATE Info <i class="fa fa-caret-down"></i> </li></a>
+                        <a><li>GATE Info</li></a>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#">Information</a>
+                            <a href="#">Syllabus</a>
+                            <a href="previous-papers.html">Previous Year papers</a>
+                            <a href="#">Referene Books</a>
+                            <a href="#">Important Dates</a>
                         </div>
                     </button>
                     <a href="#"><li>Video Course</li></a>
