@@ -112,13 +112,18 @@ section {
   border-bottom: solid 6px var(--orange);
 }
 
+.border-side {
+  border-left: solid 4px var(--orange);
+  border-right: solid 4px var(--orange);
+}
+
 /* ----------------------------- Default Values ----------------------------- */
 /* --------------------------------- Header --------------------------------- */
 header {
   background-color: var(--white);
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  height: 65px;
+  height: 55px;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -140,7 +145,7 @@ header .container {
 
 header .container img {
   display: block;
-  max-height: 40px;
+  max-height: 35px;
 }
 
 header .container .navbar {
@@ -171,6 +176,12 @@ header .container .navbar nav li button {
   background-color: var(--white);
   text-decoration: none;
   border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+header .container .navbar nav li button:active {
+  border: none;
 }
 
 header .container .navbar nav li a {
@@ -181,12 +192,32 @@ header .container .navbar nav li a {
   color: var(--black);
 }
 
+header .container .navbar nav li .dropdown-content a {
+  color: black;
+  font-size: 15px;
+  padding: 12px 40px 12px 15px;
+  font-weight: 400;
+  border-bottom: 1px solid var(--dark-grey);
+  border-left: transparent 4px solid;
+  border-right: transparent 4px solid;
+}
+
+header .container .navbar nav li .dropdown-content a i {
+  color: var(--black);
+}
+
+header .container .navbar nav li .dropdown-content a:hover {
+  background-color: var(--light-grey);
+  border-left: solid 4px var(--orange);
+  border-right: solid 4px var(--orange);
+}
+
 header .container .navbar nav li:hover {
   cursor: pointer;
 }
 
-header .container .navbar nav li:hover a {
-  color: var(--orange);
+header .container .navbar nav li:hover a i {
+  color: var(--blue);
 }
 
 header .container .navbar .nav {
@@ -750,9 +781,7 @@ footer .container img {
     font-size: 15px;
   }
   .banner .container .right {
-    width: 100%;
-    margin-left: 0;
-    position: static;
+    display: none;
   }
 }
 
@@ -868,6 +897,9 @@ footer .container img {
     text-align: left;
     margin: 0 auto;
     border-bottom: 2px solid var(--light-grey);
+  }
+  header .container .navbar .nav #sidebarMenu .sidebarMenuInner a li i {
+    color: var(--blue);
   }
   header .container .navbar .nav input[type="checkbox"]:checked ~ #sidebarMenu {
     -webkit-transform: translateX(0);
