@@ -193,7 +193,7 @@ header .container .navbar nav li a {
 }
 
 header .container .navbar nav li .dropdown-content a {
-  color: black;
+  color: var(--black);
   font-size: 15px;
   padding: 12px 40px 12px 15px;
   font-weight: 400;
