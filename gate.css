@@ -734,8 +734,8 @@ footer .container img {
     width: 100%;
   }
   .banner .container .left .element h2 {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.87rem;
+    line-height: 1.25rem;
     margin-bottom: 10px;
   }
   .banner .container .left .element h3 {
