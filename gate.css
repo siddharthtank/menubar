@@ -734,8 +734,8 @@ footer .container img {
     width: 100%;
   }
   .banner .container .left .element h2 {
-    font-size: 0.87rem;
-    line-height: 1.25rem;
+    font-size: 12px;
+    line-height: 20px;
     margin-bottom: 10px;
   }
   .banner .container .left .element h3 {
@@ -743,8 +743,8 @@ footer .container img {
     line-height: 18px;
   }
   .banner .container .left .element p {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     text-align: justify;
   }
   .banner .container .left .element table {
