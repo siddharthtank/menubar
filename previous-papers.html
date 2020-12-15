@@ -19,10 +19,9 @@
 <style>
     .dropdown-content {
       display: none;
+      opacity: 0;
       position: absolute;
-      /* background-color: #f9f9f9; */
       min-width: 160px;
-      /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
       z-index: 1;
       padding-top: 15px;
     }
@@ -40,8 +39,8 @@
 
     button:hover .dropdown-content{
         display: block;
-        /* background-color: var(--white); */
-        /* padding-top: 15px; */
+        opacity: 1;
+        transition: opacity 350ms ease-out;
     }    
 </style>
 
@@ -57,8 +56,8 @@
                         <a><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp; GATE MT</a>
                         <div class="dropdown-content">
                             <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp; Information</a>
-                            <a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;&nbsp; GATE Syllabus</a>
-                            <a href="previous-papers.html"><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;&nbsp; Previous Year Papers</a></p>
+                            <a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;&nbsp; Exam Syllabus</a>
+                            <a href="previous-papers.html"><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;&nbsp; Previous Year Papers</a>
                             <a href="#"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp; Reference Books</a>
                             <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp; Important Dates</a>
                           </div>
@@ -70,7 +69,7 @@
                             <a href="#"><i class="fa fa-cube" aria-hidden="true"></i>&nbsp;&nbsp; Physical Metallurgy</a>
                             <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;&nbsp; Mechanical Metallurgy</a>
                             <a href="#"><i class="fa fa-fire" aria-hidden="true"></i>&nbsp;&nbsp; Thermodynamics</a>
-                            <a href="#"><i class="fa fa-industry" aria-hidden="true"></i>&nbsp;&nbsp; Manufacturing Processes</a>
+                            <a href="#"><i class="fa fa-industry" aria-hidden="true"></i>&nbsp;&nbsp;Manufacturing Processes</a>
                             <a href="#"><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;&nbsp; Extractive Metallurgy</a>
                           </div>
                         </button>
@@ -100,7 +99,7 @@
                     <button class="collapsible"><a><li><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;&nbsp; GATE MT</li></a></button>
                     <div class="content">
                         <p><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp; Information</a></p>
-                        <p><a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;&nbsp; GATE Syllabus</a></p>
+                        <p><a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;&nbsp; Exam Syllabus</a></p>
                         <p><a href="previous-papers.html"><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;&nbsp; Previous Year Papers</a></p>
                         <p><a href="#"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp; Reference Books</a></p>
                         <p><a href="#">I<i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp; mportant Dates</a></p>
@@ -183,6 +182,9 @@
             <div class="element card border">
 
                 <h2>How GATE Metallurgy Previous Year Papers Help in Exam Preparation?</h2>
+
+                <img src="/images/iitd.jpg" alt="" style="height: 10%; width: 100%;">
+
                 <p>Metallurgy is a vast field. Its subjects are also spread across many topics. To score well in GATE, you don’t have to know it all. For instance, you don’t need to understand the whole engineering thermodynamics to score well. You just need to know what the exam asks you to prepare for. Here the previous year question papers come in to play. List down the topics after identifying them from these papers and prepare accordingly.</p>
                 <p>GATE MT question papers have many questions that are repeated in concept every year. Note that it is not the same as our engineering semester exams (same question with different numbers). In GATE, the concept of the question is often repeated rather than the exact question. So, it is wise to note down the important concepts from past trends.</p>
                 <p>Last but not the least, these papers would help you gauge the difficulty level of GATE Metallurgy exam. There is a fuss and stigma regarding the exam difficulty that needs to be broken. Once you go through a few recent years papers, you will realise that the concepts and subjects are mostly overlapping with your engineering syllabus. You just have to see the practical side of the concepts you have already learned. Also, solving these papers will help you simulate the exam pressure and practice in time bound situations. </p>
@@ -306,7 +308,7 @@
             <div class="list card border">
                 <a href="#" class=""><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp; &nbsp; Information</a>
                 <hr>
-                <a href="/gate-syllabus.html" class=""><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp; &nbsp; Syllabus</a>
+                <a href="/gate-syllabus.html" class=""><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp; &nbsp; Exam Syllabus</a>
                 <hr>
                 <a href="/previous-papers.html" class="active"><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp; &nbsp; Previous Year Papers</a>
                 <hr>
@@ -334,10 +336,10 @@
           <h2>GATE MT Info</h2>
           <ul>
               <li><a href="#">Overview</a></li>
-              <li><a href="#">Eligibility Criteria</a></li>
               <li><a href="#">Exam Syllabus</a></li>
               <li><a href="#">Previous Year Papers</a></li>
-              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Reference Books</a></li>
+              <li><a href="#">Important Dates</a></li>
           </ul>
         </div>
         <div>
@@ -354,10 +356,11 @@
           <h2>Contact Us</h2>
           <ul>
               <li><a href="https://www.instagram.com/gate_metallurgy" target="_blank"><img data-src="/icons/insta.png">@gate_mertallurgy</a></li>
+              <li><a href="https://wa.me/919023960112" target="_blank"><img data-src="/icons/whatsapp.png">+91 90239 60112</a></li>
               <li><a href="https://www.instagram.com/gate_metallurgy" target="_blank"><img data-src="/icons/fb.png">GATE Metallurgy</a></li>
               <li><a href="mailto: info.gatemetallurgy@gmail.com"><img data-src="/icons/email.png">info.gatemetallurgy@gmail.com</a></li>
               <li><a href="#"><img data-src="/icons/location.png">India</a></li>
-              <a href="#"><img data-src="/icons/gplay.svg" id="gplay"></a>
+              <!-- <a href="#"><img data-src="/icons/gplay.svg" id="gplay"></a> -->
           </ul>
         </div>
     </div>
@@ -366,13 +369,14 @@
     <footer>
         <div class="container">
             <P>&copy; 2020 GATE Metallurgy - All rights reserved.</P>
-            <a href="/"><img src="icons/logo-light.svg" alt="gate metallurgy" id="footer-logo"></a>
+            <a href="/"><img src="/icons/logo-light.svg" alt="gate metallurgy" id="footer-logo"></a>
         </div>
     </footer>
 <!-- ------------------------------- Footer -------------------------------- -->
 <script src="dis-click.js"></script>
 <script src="main.js"></script>
 <script src="dark-mode.js"></script>
+<script src="lazy-load.js"></script>
 <script src="jquery.min.js"></script>
     
 </body>
