@@ -123,10 +123,21 @@ section {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.grid a {
+  padding: 10px;
 }
 
 .grid a img {
   width: 100%;
+}
+
+.grid a:hover {
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
 }
 
 /* --------------------------------- Header --------------------------------- */
