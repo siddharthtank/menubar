@@ -747,11 +747,12 @@ footer .container img {
 /* ------------------------------ Media Queries ----------------------------- */
 @media screen and (max-width: 450px) {
   .grid {
+    width: 100%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .grid .con .middle {
-    width: 100%;
+  .grid a {
+    padding: 10px;
   }
   .banner .title {
     height: 140px;
