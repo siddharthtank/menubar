@@ -123,8 +123,6 @@ section {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  width: 80%;
-  margin: 0 auto;
 }
 
 .grid a {
@@ -347,6 +345,22 @@ header .container .navbar .mode .slider.round:before {
   color: var(--white);
   text-align: center;
   margin: 0 10px;
+}
+
+.banner .title h1 button {
+  border: none;
+  outline: none;
+  padding: 8px 22px 8px 16px;
+  background-color: var(--orange-blue);
+  color: var(--black);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.banner .title h1 button:hover {
+  background-color: var(--white);
 }
 
 .banner .container {
@@ -747,7 +761,6 @@ footer .container img {
 /* ------------------------------ Media Queries ----------------------------- */
 @media screen and (max-width: 450px) {
   .grid {
-    width: 100%;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
