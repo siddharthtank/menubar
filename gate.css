@@ -347,7 +347,7 @@ header .container .navbar .mode .slider.round:before {
   margin: 0 10px;
 }
 
-.banner .title h1 button {
+.banner .title h1 a {
   border: none;
   outline: none;
   padding: 8px 22px 8px 16px;
@@ -359,7 +359,7 @@ header .container .navbar .mode .slider.round:before {
   font-weight: 500;
 }
 
-.banner .title h1 button:hover {
+.banner .title h1 a:hover {
   background-color: var(--white);
 }
 
