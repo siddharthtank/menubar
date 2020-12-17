@@ -1011,6 +1011,7 @@ footer .container img {
   }
   .banner .title h1 {
     font-size: 18px;
+    font-weight: 500;
     line-height: 30px;
     margin: 0 10px;
   }
